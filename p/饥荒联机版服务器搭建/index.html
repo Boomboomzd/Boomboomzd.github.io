@@ -243,7 +243,7 @@
       <ol>
         <li><a href="#31-更新软件源和安装依赖">3.1 更新软件源和安装依赖</a></li>
         <li><a href="#32-饥荒服务器环境安装">3.2 饥荒服务器环境安装</a></li>
-        <li><a href="#image-2026012523293503333-服务器配置"><img src="image-20260125232935033.png" alt="image-20260125232935033">3.3 服务器配置</a></li>
+        <li><a href="#33-服务器配置">3.3 服务器配置</a></li>
       </ol>
     </li>
   </ol>
@@ -699,7 +699,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>成功安装打印如下：</p>
-<h3 id="image-2026012523293503333-服务器配置"><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125232935033.png"
+<p><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125232935033.png"
 	width="1217"
 	height="248"
 	srcset="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125232935033_hu_61e586f9acaed21e.png 480w, ../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125232935033_hu_4aa4d8b610e0a2c2.png 1024w"
@@ -712,7 +712,8 @@
 		data-flex-grow="490"
 		data-flex-basis="1177px"
 	
->3.3 服务器配置
+></p>
+<h3 id="33-服务器配置">3.3 服务器配置
 </h3><p>运行服务器，需要游戏官方的token，进行授权，访问科雷官网：<a class="link" href="https://accounts.klei.com/login"  target="_blank" rel="noopener"
     >Klei</a>，使用steam账户登陆，选择<code>游戏</code>&raquo;<code>《饥荒：联机版》的游戏服务器</code>，输入服务器名称后点击<code>添加新服务器</code>：</p>
 <p><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125234105919.png"
@@ -919,12 +920,30 @@
 </div><p>备用指令</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#查看饥荒服务器监听的端口</span>
 </span></span><span class="line"><span class="cl">sudo ss -tulpn <span class="p">|</span> grep dontstarve
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看每个进程在哪个核心上运行</span>
+</span></span><span class="line"><span class="cl">ps -eo pid,psr,pcpu,comm <span class="p">|</span> grep dontstarve
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 更详细的版本</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> pid in <span class="k">$(</span>pgrep dontstarve<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;进程 </span><span class="nv">$pid</span><span class="s2"> 运行在核心: </span><span class="k">$(</span>taskset -cp <span class="nv">$pid</span> <span class="p">|</span> awk -F<span class="s1">&#39;: &#39;</span> <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    ps -p <span class="nv">$pid</span> -L -o tid,psr,pcpu,comm <span class="p">|</span> grep -v TID
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="指令存档">指令存档
