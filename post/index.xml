@@ -16,7 +16,7 @@
         <description>&lt;h1 id=&#34;饥荒联机版服务器搭建&#34;&gt;饥荒联机版服务器搭建
 &lt;/h1&gt;&lt;h2 id=&#34;一环境准备&#34;&gt;一、环境准备
 &lt;/h2&gt;&lt;h3 id=&#34;11-硬件准备&#34;&gt;1.1 硬件准备
-&lt;/h3&gt;&lt;p&gt;虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下，之前也不过一千五左右&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260124160439538.png&#34;
 	width=&#34;1415&#34;
 	height=&#34;755&#34;
@@ -31,7 +31,129 @@
 		data-flex-basis=&#34;449px&#34;
 	
 &gt;&lt;/p&gt;
-</description>
+&lt;p&gt;实物图我放在了下面，手掌大小，非常小巧，我主要看重的是它宣传的运行噪音低于32dB，适合直接放在卧室。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/EQi12_1235U.jpg&#34;
+	width=&#34;1279&#34;
+	height=&#34;1235&#34;
+	srcset=&#34;../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/EQi12_1235U_hu_acb27764549ab1d0.jpg 480w, ../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/EQi12_1235U_hu_a5fab8985cc4aa3.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;EQi12_1235U&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;103&#34;
+		data-flex-basis=&#34;248px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;服务器主机准备好了，再找一个做启动盘的U盘配合我以前的台式主机就可以开始了。&lt;/p&gt;
+&lt;h3 id=&#34;12-软件环境准备&#34;&gt;1.2 软件环境准备
+&lt;/h3&gt;&lt;p&gt;软件环境主要就是启动盘的制作了，首先到&lt;a class=&#34;link&#34; href=&#34;https://ubuntu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ubuntu.com&lt;/a&gt;官网下载最新的镜像，我下载的是&lt;code&gt;ubuntu-24.04.3-live-server-amd64.iso&lt;/code&gt;，然后到&lt;a class=&#34;link&#34; href=&#34;https://rufus.ie/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;rufus.ie&lt;/a&gt;官网下载启动盘制作工具Rufus并打开，引导类型选择刚刚下载的镜像，分区类型选择GPT，目标系统类型选择UEFI，2012年后的主机基本都是GPT+UEFI了，如果是上古时代的宝贝需要选择其他类型，其他默认即可，点击&lt;code&gt;开始&lt;/code&gt;等待&lt;code&gt;准备就绪&lt;/code&gt;进度条全绿后即可关闭退出。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意：请备份U盘数据，该操作会格式化整个U盘！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125145241361.png&#34;
+	width=&#34;595&#34;
+	height=&#34;881&#34;
+	srcset=&#34;../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125145241361_hu_c087045f7a9375da.png 480w, ../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125145241361_hu_85137f5632572a99.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20260125145241361&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;67&#34;
+		data-flex-basis=&#34;162px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二-操作系统安装与远程访问&#34;&gt;二、 操作系统安装与远程访问
+&lt;/h2&gt;&lt;h3 id=&#34;21-ubuntu-server安装&#34;&gt;2.1 Ubuntu-Server安装
+&lt;/h3&gt;&lt;p&gt;第一步：&lt;/p&gt;
+&lt;p&gt;将准备好的启动盘插在迷你主机上，进入BIOS模式选择对应的启动盘启动，我这主机是按&lt;code&gt;F7&lt;/code&gt;进入BIOS，一般开机界面会打印进入BIOS的按键的。&lt;/p&gt;
+&lt;p&gt;第二步：&lt;/p&gt;
+&lt;p&gt;安装配置，这里有个非常详细的教程，按这个来就可以了&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/698434939&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;zhuanlan.zhihu.com&lt;/a&gt;，网络连接因为暂时没内网环境我先连的手机热点，后续再修改，组件就和教程一样只安装了一个SSH，其他的搭建简单的服务器也用不上。&lt;/p&gt;
+&lt;p&gt;第三步：&lt;/p&gt;
+&lt;p&gt;重启查看系统是否正常，检查一下内存使用情况，磁盘分区，看看CPU占用率这些基础的硬件状态，一切正常&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;top &lt;span class=&#34;c1&#34;&gt;#查看进程状态，包含CPU和内存信息，按q退出&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;df -h &lt;span class=&#34;c1&#34;&gt;#查看磁盘状态，因为默认只分了100G，还有300多G在LVM里面没有划分，这里看不到&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;free -h &lt;span class=&#34;c1&#34;&gt;#查看内存状态，有4GB的交换空间，如果内存溢出会从硬盘搞4GB的空间来临时使用，避免直接崩溃&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;22-内网wifi连接&#34;&gt;2.2 内网WIFI连接
+&lt;/h3&gt;&lt;p&gt;之前安装的时候连的手机热点，现在需要进入内网环境，需要修改一下配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls /etc/netplan/ &lt;span class=&#34;c1&#34;&gt;#查看一下该目录下的配置文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#建议执行下面的操作备份一下文件&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo cp /etc/netplan/你的配置文件.yaml /etc/netplan/你的配置文件.yaml.backup
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo nano /etc/netplan/你的配置文件.yaml &lt;span class=&#34;c1&#34;&gt;#用nano打开这个网络配置文件，nano是编辑器，窗口底下会显示所有操作命令&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;#因为添加的还是wifi所以按照本来手机热点的格式添加一个配置就行了，更换一下WIFI名称和密码就可以了&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;修改完后点击&lt;code&gt;ctrl+x&lt;/code&gt;退出&lt;code&gt;y&lt;/code&gt;保存，&lt;code&gt;enter&lt;/code&gt;确认即可。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo netplan apply &lt;span class=&#34;c1&#34;&gt;#应用修改后的最新配置&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hostname -I &lt;span class=&#34;c1&#34;&gt;#查看当前IP，如果有就说明连接上了，可以通过电脑远程访问了&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;配置启动&lt;code&gt;SSH&lt;/code&gt;，下面是其常用指令，这里直接启动然后看状态处于&lt;code&gt;active&lt;/code&gt;就可以了（开机自启一般需要设置）。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl status ssh	&lt;span class=&#34;c1&#34;&gt;#查运行状态&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl start ssh	&lt;span class=&#34;c1&#34;&gt;#启动SSH服务	&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl stop ssh		&lt;span class=&#34;c1&#34;&gt;#停止SSH服务	&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl restart ssh	&lt;span class=&#34;c1&#34;&gt;#重启SSH服务	&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; ssh	&lt;span class=&#34;c1&#34;&gt;#设置开机自启	&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl disable ssh	&lt;span class=&#34;c1&#34;&gt;#禁用开机自启	&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;23-ssh远程访问&#34;&gt;2.3 SSH远程访问
+&lt;/h3&gt;&lt;p&gt;如果在电脑上也能ping通服务器的IP，那就可以拔掉服务器的显示屏和键盘了，我显示屏支持分屏显示还好，主机用DP接口，迷你主机用HDMI接口可以一起使用，但键盘只有一个只能反复切换很麻烦，所以还是远程登陆比较方便。&lt;/p&gt;
+&lt;p&gt;回到Windows的主机，打开CMD，开始远程访问：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#第一次连接时，客户端会询问你是否信任该主机，输入yes并回车即可
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh 你的服务器用户名@服务器的IP地址 #会提示输入账号和密码，看到和之前在服务器上一样的前缀提示符就说明成功了
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;三-局域网服务器搭建&#34;&gt;三、 局域网服务器搭建
+&lt;/h2&gt;</description>
         </item>
         <item>
         <title>心情随笔</title>
