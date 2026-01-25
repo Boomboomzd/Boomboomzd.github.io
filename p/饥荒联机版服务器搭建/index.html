@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="饥荒联机版服务器搭建 一、环境准备 1.1 硬件准备 虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="饥荒联机版服务器搭建 一、环境准备 1.1 硬件准备 虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099，还是在有国补的情况下。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。\n">
 <title>饥荒联机版服务器搭建</title>
 
 <link rel='canonical' href='https://Boomboomzd.github.io/p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/'>
 
 <link rel="stylesheet" href="../../scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="饥荒联机版服务器搭建">
-<meta property='og:description' content="饥荒联机版服务器搭建 一、环境准备 1.1 硬件准备 虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。\n">
+<meta property='og:description' content="饥荒联机版服务器搭建 一、环境准备 1.1 硬件准备 虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099，还是在有国补的情况下。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。\n">
 <meta property='og:url' content='https://Boomboomzd.github.io/p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/'>
 <meta property='og:site_name' content='Boomboomzd'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-01-24T15:59:09&#43;08:00'/><meta property='article:modified_time' content='2026-01-24T15:59:09&#43;08:00'/>
 <meta name="twitter:title" content="饥荒联机版服务器搭建">
-<meta name="twitter:description" content="饥荒联机版服务器搭建 一、环境准备 1.1 硬件准备 虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。\n">
+<meta name="twitter:description" content="饥荒联机版服务器搭建 一、环境准备 1.1 硬件准备 虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099，还是在有国补的情况下。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。\n">
     <link rel="shortcut icon" href="../../yuanbao.ico" />
 
     </head>
@@ -239,7 +239,20 @@
         <li><a href="#23-ssh远程访问">2.3 SSH远程访问</a></li>
       </ol>
     </li>
-    <li><a href="#三-局域网服务器搭建">三、 局域网服务器搭建</a></li>
+    <li><a href="#三-局域网服务器搭建">三、 局域网服务器搭建</a>
+      <ol>
+        <li><a href="#31-更新软件源和安装依赖">3.1 更新软件源和安装依赖</a></li>
+        <li><a href="#32-饥荒服务器环境安装">3.2 饥荒服务器环境安装</a></li>
+        <li><a href="#image-2026012523293503333-服务器配置"><img src="image-20260125232935033.png" alt="image-20260125232935033">3.3 服务器配置</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#基础命令">基础命令</a></li>
+    <li><a href="#cpu温度读取">CPU温度读取</a></li>
+    <li><a href="#用户信息操作">用户信息操作</a></li>
+    <li><a href="#apt操作">APT操作</a></li>
   </ol>
 </nav>
         </div>
@@ -300,7 +313,7 @@
     <h1 id="饥荒联机版服务器搭建">饥荒联机版服务器搭建
 </h1><h2 id="一环境准备">一、环境准备
 </h2><h3 id="11-硬件准备">1.1 硬件准备
-</h3><p>虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。</p>
+</h3><p>虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099，还是在有国补的情况下。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。</p>
 <p><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260124160439538.png"
 	width="1415"
 	height="755"
@@ -437,7 +450,651 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="三-局域网服务器搭建">三、 局域网服务器搭建
-</h2>
+</h2><p>服务器首先当然要解决公网问题，现在我的路由器没给IPV4的公网IP，需要借助其他手段比如内网穿透，代理之类的，但最靠谱的还是直接向运营商要一个公网IP，这里因为我还有两个月就搬家的原因，决定先试试局域网，后面搬家后再找运营商要一个公网IP。</p>
+<h3 id="31-更新软件源和安装依赖">3.1 更新软件源和安装依赖
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#启用Ubuntu系统上的“multiverse”（多元宇宙）软件源仓库</span>
+</span></span><span class="line"><span class="cl">sudo add-apt-repository multiverse 
+</span></span><span class="line"><span class="cl"><span class="c1">#在64位的Ubuntu系统上，添加对32位(i386)软件包架构的支持</span>
+</span></span><span class="line"><span class="cl">sudo dpkg --add-architecture i386
+</span></span><span class="line"><span class="cl"><span class="c1">#刷新本地的软件包索引列表，使其与当前已启用的所有软件源</span>
+</span></span><span class="line"><span class="cl">sudo apt-get -y update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#安装依赖</span>
+</span></span><span class="line"><span class="cl">sudo apt install -y screen wget unzip
+</span></span><span class="line"><span class="cl">sudo apt-get -y install lib32gcc-s1 libstdc++6:i386 libgcc1:i386 libcurl4-gnutls-dev:i386
+</span></span><span class="line"><span class="cl"><span class="c1">#screen：终端复用器。它允许你在一个SSH连接中创建多个持久的虚拟终端会话。当你关闭SSH窗口后，在 screen 会话中运行的程序（如饥荒服务器）会继续在后台执行。这是管理长时间运行服务的必备工具。</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#wget unzip：下载工具和解压工具</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#lib32gcc-s1 libstdc++6:i386 libgcc1:i386 libcurl4-gnutls-dev:i386：32位运行库，SteamCMD和很多游戏服务器程序是32位的，我的服务器是64位的</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装依赖的时候出现报错了，根据报错信息分析，这里很奇怪，我没有换过镜像源，安装的时候默认配置是<code>cn.archive.ubuntu.com</code>（Ubuntu官方为中国大陆提供的官方镜像）和 <code>security.ubuntu.com</code>，根本没有<code>tuna</code>清华的源，不知道怎么跑这里去了，而且403错误代码是版本号对不上，查询我的版本为noble即24.04，没搞懂，但换阿里的源就正常了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#报错信息：E: Failed to fetch http://mirrors.tuna.tsinghua.edu.cn/ubuntu/pool/main/p/p11-kit/libp11-kit0_0.25.3-4ubuntu2.1_i386.deb  403  Forbidden [IP: 2402:f000:1:400::2 80]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#系统版本查询</span>
+</span></span><span class="line"><span class="cl">lsb_release -c
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#备份镜像源配置</span>
+</span></span><span class="line"><span class="cl">sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#更换阿里的镜像源</span>
+</span></span><span class="line"><span class="cl">sudo tee /etc/apt/sources.list <span class="s">&lt;&lt; &#39;EOF&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s">deb https://mirrors.aliyun.com/ubuntu/ noble main restricted universe multiverse
+</span></span></span><span class="line"><span class="cl"><span class="s">deb https://mirrors.aliyun.com/ubuntu/ noble-updates main restricted universe multiverse
+</span></span></span><span class="line"><span class="cl"><span class="s">deb https://mirrors.aliyun.com/ubuntu/ noble-security main restricted universe multiverse
+</span></span></span><span class="line"><span class="cl"><span class="s">deb https://mirrors.aliyun.com/ubuntu/ noble-backports main restricted universe multiverse
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#更新</span>
+</span></span><span class="line"><span class="cl">sudo apt-get update
+</span></span><span class="line"><span class="cl"><span class="c1">#重新安装依赖</span>
+</span></span><span class="line"><span class="cl">sudo apt install -y screen wget unzip
+</span></span><span class="line"><span class="cl">sudo apt-get -y install lib32gcc-s1 libstdc++6:i386 libgcc1:i386 libcurl4-gnutls-dev:i386
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装成功了，这时候我们打开<code>sources.list.backup</code>会发现:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Ubuntu sources have moved to /etc/apt/sources.list.d/ubuntu.sources</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#原来这是24.04的新特性，该版本默认启用了全新的“Deb822-style”源格式，替代了已使用二十多年的传统 sources.list格式</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#然后我们继续打开sources文件，显示如下：</span>
+</span></span><span class="line"><span class="cl">Types: deb
+</span></span><span class="line"><span class="cl">URIs: http://cn.archive.ubuntu.com/ubuntu/
+</span></span><span class="line"><span class="cl">Suites: noble noble-updates noble-backports
+</span></span><span class="line"><span class="cl">Components: main restricted universe multiverse
+</span></span><span class="line"><span class="cl">Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Types: deb
+</span></span><span class="line"><span class="cl">URIs: http://security.ubuntu.com/ubuntu/
+</span></span><span class="line"><span class="cl">Suites: noble-security
+</span></span><span class="line"><span class="cl">Components: main restricted universe multiverse
+</span></span><span class="line"><span class="cl">Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+</span></span><span class="line"><span class="cl"><span class="c1">#我们之前换源是在list下操作的，所以这个source文件没有更改过，这里面默认就是官方的源，不知道清华的源哪里来的，而且清华的源为什么会报错，阿里就不会</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>虽然现在能跑，但毕竟刚刚换源用的老方法修改list，还是换成新特性修改吧：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#打开sources文件</span>
+</span></span><span class="line"><span class="cl">sudo nano /etc/apt/sources.list.d/ubuntu.sources
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#添加如下文本并保存(前面两个官方的源可全部注释掉)</span>
+</span></span><span class="line"><span class="cl">Types: deb
+</span></span><span class="line"><span class="cl">URIs: https://mirrors.aliyun.com/ubuntu/
+</span></span><span class="line"><span class="cl">Suites: noble noble-updates noble-security noble-backports
+</span></span><span class="line"><span class="cl">Components: main restricted universe multiverse
+</span></span><span class="line"><span class="cl">Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#打开刚刚的list文件并全部注释，每行前面加“#”</span>
+</span></span><span class="line"><span class="cl">sudo nano /etc/apt/sources.list
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#更新源</span>
+</span></span><span class="line"><span class="cl">sudo apt-get update
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>卧槽，看我发现了啥，出现了清华的源，我刚刚是在sources文件后面原配置添加的阿里的源，没有注释，也就说这前面官方源配置莫名奇妙跑到清华源去了，造成了后续的403报错，我将两个官方源都注释了，再更新就没有添加清华源了，更能证明这一点。阿里源本来就同步了这两个官方源的，保留阿里源就够了，我暂时就不再深究了后续熟悉APT后有机会再来看看。</p>
+<p><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125222548825.png"
+	width="1123"
+	height="286"
+	srcset="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125222548825_hu_8d68a2de0b47d1fd.png 480w, ../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125222548825_hu_4220d8d01bd5d5fd.png 1024w"
+	loading="lazy"
+	
+		alt="image-20260125222548825"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="392"
+		data-flex-basis="942px"
+	
+></p>
+<h3 id="32-饥荒服务器环境安装">3.2 饥荒服务器环境安装
+</h3><p>第一步：steamcmd安装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#回到主目录并创建饥荒服务器专用目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~
+</span></span><span class="line"><span class="cl">mkdir -p dst-server/steamcmd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#下载并解压steamcmd程序，这是直接去steam官方下载最新版，没有用APT</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/dst-server/steamcmd/
+</span></span><span class="line"><span class="cl">curl -sqL <span class="s2">&#34;https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz&#34;</span> <span class="p">|</span> tar zxvf -
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#运行，完成后自动退出</span>
+</span></span><span class="line"><span class="cl">./steamcmd.sh +quit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完成后目录如下图所示：</p>
+<p><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125230622310.png"
+	width="960"
+	height="317"
+	srcset="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125230622310_hu_83207dc06c10bcf6.png 480w, ../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125230622310_hu_79f4d5aa93a1727d.png 1024w"
+	loading="lazy"
+	
+		alt="image-20260125230622310"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="302"
+		data-flex-basis="726px"
+	
+></p>
+<p>第二步：饥荒联机版服务端安装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#回到主目录并创建饥荒游戏专用目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~
+</span></span><span class="line"><span class="cl">mkdir -p dst-server/dontstarve
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#使用steamcmd下载饥荒联机版服务端</span>
+</span></span><span class="line"><span class="cl">~/dst-server/steamcmd/steamcmd.sh +force_install_dir ~/dst-server/dontstarve +login anonymous +app_update <span class="m">343050</span> validate +quit
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#报错：ERROR! Failed to install app &#39;343050&#39; (Missing configuration)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#可能是安装时记录的配置与现在执行有误，删除配置文件重新下载</span>
+</span></span><span class="line"><span class="cl">pkill -f steamcmd
+</span></span><span class="line"><span class="cl">rm -rf ~/.steam ~/Steam
+</span></span><span class="line"><span class="cl">~/dst-server/steamcmd/steamcmd.sh +force_install_dir ~/dst-server/dontstarve +login anonymous +app_update <span class="m">343050</span> validate +quit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>成功安装打印如下：</p>
+<h3 id="image-2026012523293503333-服务器配置"><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125232935033.png"
+	width="1217"
+	height="248"
+	srcset="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125232935033_hu_61e586f9acaed21e.png 480w, ../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125232935033_hu_4aa4d8b610e0a2c2.png 1024w"
+	loading="lazy"
+	
+		alt="image-20260125232935033"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="490"
+		data-flex-basis="1177px"
+	
+>3.3 服务器配置
+</h3><p>运行服务器，需要游戏官方的token，进行授权，访问科雷官网：<a class="link" href="https://accounts.klei.com/login"  target="_blank" rel="noopener"
+    >Klei</a>，使用steam账户登陆，选择<code>游戏</code>&raquo;<code>《饥荒：联机版》的游戏服务器</code>，输入服务器名称后点击<code>添加新服务器</code>：</p>
+<p><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125234105919.png"
+	width="1677"
+	height="551"
+	srcset="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125234105919_hu_dc8259470320e8d0.png 480w, ../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125234105919_hu_6c572a4c54863150.png 1024w"
+	loading="lazy"
+	
+		alt="image-20260125234105919"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="304"
+		data-flex-basis="730px"
+	
+></p>
+<p>服务器生成后点击<code>配置服务器</code>，按照你的想法配置好后点击<code>下载设置</code>，下载完成后，得到一个名为<code>MyDediServer.zip</code>的压缩文件。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#创建游戏配置文件夹</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~
+</span></span><span class="line"><span class="cl">mkdir -p dst-server/dontstarve-config/clusters
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>回到台式机的<code>CMD</code>，上传文件到服务器，这里是我自己的路径</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">scp -r D:\Linux\DST_Server\MyDediServer boomboomzd@192.168.1.31:~/dst-server/dontstarve-config/clusters
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>又回到服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#可以安装一个tree工具方便查看目录结构</span>
+</span></span><span class="line"><span class="cl">sudo apt install tree
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#文件树状图结构如下图所示</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/dst-server/dontstarve-config/
+</span></span><span class="line"><span class="cl">tree -L <span class="m">4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#cluster.ini：集群的配置</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#cluster_token.txt：服务器token</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#Caves:洞穴相关的配置</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#Master：地面相关配置</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260126001050247.png"
+	width="1122"
+	height="401"
+	srcset="../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260126001050247_hu_6d2ea4af841e400e.png 480w, ../../p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260126001050247_hu_f0bcf55455747f6d.png 1024w"
+	loading="lazy"
+	
+		alt="image-20260126001050247"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="279"
+		data-flex-basis="671px"
+	
+></p>
+<p>创建运行脚本并保存</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> ~/dst-server/
+</span></span><span class="line"><span class="cl">sudo nano ./run_server.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>脚本内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#以下需要替换为你自己的路径</span>
+</span></span><span class="line"><span class="cl"><span class="nv">game_home</span><span class="o">=</span>/home/boomboomzd/dst-server/dontstarve
+</span></span><span class="line"><span class="cl"><span class="nv">game_config_dir</span><span class="o">=</span>/home/boomboomzd/dst-server/dontstarve-config
+</span></span><span class="line"><span class="cl"><span class="nv">game_log_path</span><span class="o">=</span>/home/boomboomzd/dst-server/log
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">shard</span><span class="o">=</span><span class="nv">$1</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="nv">$shard</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;Master&#34;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;启动地面服务器&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="nv">$shard</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;Caves&#34;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;启动洞穴服务器&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;输入只能是Master或者Caves&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">exit</span> -1
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> <span class="s2">&#34;</span><span class="nv">$game_home</span><span class="s2">&#34;</span>/bin
+</span></span><span class="line"><span class="cl"><span class="nv">run_command</span><span class="o">=(</span>./dontstarve_dedicated_server_nullrenderer<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">run_command</span><span class="o">+=(</span>-console<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">run_command</span><span class="o">+=(</span>-persistent_storage_root <span class="s2">&#34;</span><span class="nv">$game_config_dir</span><span class="s2">&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">run_command</span><span class="o">+=(</span>-conf_dir clusters<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">run_command</span><span class="o">+=(</span>-cluster MyDediServer<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">run_command</span><span class="o">+=(</span>-shard <span class="s2">&#34;</span><span class="nv">$shard</span><span class="s2">&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#运行日志会存储在log_Master.log和log_Caves.log文件中，可以查看日志内容</span>
+</span></span><span class="line"><span class="cl">mkdir -p <span class="s2">&#34;</span><span class="nv">$game_log_path</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;</span><span class="si">${</span><span class="nv">run_command</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&#34;</span> &gt;<span class="s2">&#34;</span><span class="nv">$game_log_path</span><span class="s2">&#34;</span>/log_<span class="nv">$shard</span>.log 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">&amp;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>启动服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#将文件的所有者和组都改为你的用户（boomboomzd），刚刚sudo nano创建的文件权限属于root，普通文件操作不应该用sudo的</span>
+</span></span><span class="line"><span class="cl">sudo chown boomboomzd:boomboomzd ~/dst-server/run_server.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#添加执行权限</span>
+</span></span><span class="line"><span class="cl">chmod +x run_server.sh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#启动地面服务器</span>
+</span></span><span class="line"><span class="cl">./run_server.sh Master
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#启动洞穴服务器</span>
+</span></span><span class="line"><span class="cl">./run_server.sh Caves
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#应该就可以在局域网的其他设备搜到了</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>停止服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#查看服务器进程id</span>
+</span></span><span class="line"><span class="cl">ps -ef<span class="p">|</span> grep dontstarve
+</span></span><span class="line"><span class="cl"><span class="c1">#停止进程</span>
+</span></span><span class="line"><span class="cl"><span class="nb">kill</span> 进程id
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>备用指令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#查看饥荒服务器监听的端口</span>
+</span></span><span class="line"><span class="cl">sudo ss -tulpn <span class="p">|</span> grep dontstarve
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="指令存档">指令存档
+</h1><h2 id="基础命令">基础命令
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 切换到用户的主目录</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~
+</span></span><span class="line"><span class="cl"><span class="c1"># 显示当前绝对路径</span>
+</span></span><span class="line"><span class="cl"><span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建文件夹</span>
+</span></span><span class="line"><span class="cl">mkdir 目录名     <span class="c1">#当前目录创建</span>
+</span></span><span class="line"><span class="cl">mkdir -p 含路径  <span class="c1">#递归创建，没有的父目录也能创建</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除文件夹</span>
+</span></span><span class="line"><span class="cl">rmdir 目录名     <span class="c1">#当前目录删除</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#新建文件</span>
+</span></span><span class="line"><span class="cl">touch 文件名
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#终止进程</span>
+</span></span><span class="line"><span class="cl">pkill 进程名
+</span></span><span class="line"><span class="cl">pkill -f 进程名 <span class="c1">#终止所有命令行中含有该进程的进程</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#权限操作</span>
+</span></span><span class="line"><span class="cl">chmod <span class="o">[</span>选项<span class="o">]</span> 权限模式 文件...
+</span></span><span class="line"><span class="cl">chmod <span class="o">[</span>选项<span class="o">]</span> --reference<span class="o">=</span>参考文件 文件...
+</span></span><span class="line"><span class="cl">chmod +x 文件 <span class="c1">#添加执行权限</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="cpu温度读取">CPU温度读取
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看所有温度区域</span>
+</span></span><span class="line"><span class="cl">cat /sys/class/thermal/thermal_zone*/temp
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看具体的温度（需要除以1000得到摄氏度）</span>
+</span></span><span class="line"><span class="cl">cat /sys/class/thermal/thermal_zone0/temp
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 更友好的查看方式</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> i in /sys/class/thermal/thermal_zone*/temp<span class="p">;</span> <span class="k">do</span> 
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;Zone </span><span class="k">$(</span>basename <span class="k">$(</span>dirname <span class="nv">$i</span><span class="k">))</span><span class="s2">: </span><span class="k">$(</span>cat <span class="nv">$i</span> <span class="p">|</span> awk <span class="s1">&#39;{print $1/1000}&#39;</span><span class="k">)</span><span class="s2">°C&#34;</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="用户信息操作">用户信息操作
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看当前登录用户</span>
+</span></span><span class="line"><span class="cl">who
+</span></span><span class="line"><span class="cl">whoami      <span class="c1"># 当前用户</span>
+</span></span><span class="line"><span class="cl">users       <span class="c1"># 所有登录用户</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 显示更详细的信息</span>
+</span></span><span class="line"><span class="cl">w           <span class="c1"># 显示谁在登录及在做什么</span>
+</span></span><span class="line"><span class="cl">last        <span class="c1"># 显示登录历史</span>
+</span></span><span class="line"><span class="cl">lastlog     <span class="c1"># 显示所有用户最近登录时间</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看系统账户（UID &lt; 1000）</span>
+</span></span><span class="line"><span class="cl">awk -F: <span class="s1">&#39;$3 &lt; 1000 {print $1}&#39;</span> /etc/passwd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看普通用户（UID &gt;= 1000）</span>
+</span></span><span class="line"><span class="cl">awk -F: <span class="s1">&#39;$3 &gt;= 1000 {print $1}&#39;</span> /etc/passwd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看可登录用户（有有效shell）</span>
+</span></span><span class="line"><span class="cl">grep -v <span class="s2">&#34;/nologin\|/false&#34;</span> /etc/passwd <span class="p">|</span> cut -d: -f1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看密码策略</span>
+</span></span><span class="line"><span class="cl">chage -l 用户名      <span class="c1"># 显示密码过期信息</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 查看sudo权限</span>
+</span></span><span class="line"><span class="cl">sudo -l -U 用户名    <span class="c1"># 查看用户的sudo权限</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 统计用户数量</span>
+</span></span><span class="line"><span class="cl">wc -l /etc/passwd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="apt操作">APT操作
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#查看所有通过apt安装的包,支持用 grep 过滤，如 apt list --installed | grep steam</span>
+</span></span><span class="line"><span class="cl">apt list --installed
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#更新</span>
+</span></span><span class="line"><span class="cl">sudo apt-get update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#安装</span>
+</span></span><span class="line"><span class="cl">sudo apt-get -y install xxxA xxxB xxxC
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#查看所有活动的软件源</span>
+</span></span><span class="line"><span class="cl">apt policy
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
