@@ -58,8 +58,8 @@
                     
                     
                         
-                        <img src="../../img/avatar_hu_fe7dff65998b110b.png" width="300"
-                            height="400" class="site-logo" loading="lazy" alt="Avatar">
+                        <img src="../../img/avatar_hu_720a66f3b5338bcd.png" width="300"
+                            height="360" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
                 </a>
@@ -246,6 +246,7 @@
         <li><a href="#33-服务器配置">3.3 服务器配置</a></li>
       </ol>
     </li>
+    <li><a href="#四公网服务器搭建">四、公网服务器搭建</a></li>
   </ol>
 
   <ol>
@@ -944,6 +945,26 @@
 </span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;进程 </span><span class="nv">$pid</span><span class="s2"> 运行在核心: </span><span class="k">$(</span>taskset -cp <span class="nv">$pid</span> <span class="p">|</span> awk -F<span class="s1">&#39;: &#39;</span> <span class="s1">&#39;{print $2}&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">    ps -p <span class="nv">$pid</span> -L -o tid,psr,pcpu,comm <span class="p">|</span> grep -v TID
 </span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="四公网服务器搭建">四、公网服务器搭建
+</h2><p>最理想的情况当然是拥有公网的IPV4地址，但不好搞，好多地方都要收费，然后就是内网穿透之类的，但也需要一定的费用租借公网服务器，还有就是IPV6，因为几乎用不完的数量，公网IPV6运营商一般还是会提供的，我最先就尝试了该方法，竟然一次性成功了。。。而且简单得离谱。。。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#打开配置文件</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/DST_Server<span class="se">\M</span>yDediServer
+</span></span><span class="line"><span class="cl">nano cluster.ini
+</span></span><span class="line"><span class="cl"><span class="c1">#修改bind_ip</span>
+</span></span><span class="line"><span class="cl"><span class="nv">bind_ip</span> <span class="o">=</span> ::  <span class="c1"># 两个冒号，代表监听所有IPv4和IPv6地址</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#保存退出并重启服务器，然后就成功了，我的一位同学友情参与了测试，在离我四十公里远的地方直接在饥荒联机版的游戏大厅找到了我的服务器并成功进入。</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="指令存档">指令存档
