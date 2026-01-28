@@ -13,10 +13,10 @@
         <pubDate>Sat, 24 Jan 2026 15:59:09 +0800</pubDate>
         
         <guid>https://Boomboomzd.github.io/p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</guid>
-        <description>&lt;h1 id=&#34;饥荒联机版服务器搭建记录非教学&#34;&gt;饥荒联机版服务器搭建(记录非教学)
-&lt;/h1&gt;&lt;h2 id=&#34;一环境准备&#34;&gt;一、环境准备
-&lt;/h2&gt;&lt;h3 id=&#34;11-硬件准备&#34;&gt;1.1 硬件准备
-&lt;/h3&gt;&lt;p&gt;虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099，还是在有国补的情况下。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。&lt;/p&gt;
+        <description>&lt;h2 id=&#34;饥荒联机版服务器搭建记录非教学&#34;&gt;饥荒联机版服务器搭建(记录非教学)
+&lt;/h2&gt;&lt;h3 id=&#34;一环境准备&#34;&gt;一、环境准备
+&lt;/h3&gt;&lt;h4 id=&#34;11-硬件准备&#34;&gt;1.1 硬件准备
+&lt;/h4&gt;&lt;p&gt;虽然近日因为AI计算浪潮，内存条几乎翻倍猛涨，但我仍然狠下心买了一台迷你主机，配置如下（16G内存），之前发售的时候也不过1500左右，现在要足足2099，还是在有国补的情况下。考虑到配置比较低，系统我决定使用Ubuntu Server版本，虽然有核显，但单纯做服务器确实没必要搞图形化界面浪费性能，目前打算是开1-2个档就够了，主要比较关心一个档能支持多少人，这个我不太清楚怎么根据配置计算，只有一步步看了。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260124160439538.png&#34;
 	width=&#34;1415&#34;
 	height=&#34;755&#34;
@@ -47,8 +47,8 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;服务器主机准备好了，再找一个做启动盘的U盘配合我以前的台式主机就可以开始了。&lt;/p&gt;
-&lt;h3 id=&#34;12-软件环境准备&#34;&gt;1.2 软件环境准备
-&lt;/h3&gt;&lt;p&gt;软件环境主要就是启动盘的制作了，首先到&lt;a class=&#34;link&#34; href=&#34;https://ubuntu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h4 id=&#34;12-软件环境准备&#34;&gt;1.2 软件环境准备
+&lt;/h4&gt;&lt;p&gt;软件环境主要就是启动盘的制作了，首先到&lt;a class=&#34;link&#34; href=&#34;https://ubuntu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ubuntu.com&lt;/a&gt;官网下载最新的镜像，我下载的是&lt;code&gt;ubuntu-24.04.3-live-server-amd64.iso&lt;/code&gt;，然后到&lt;a class=&#34;link&#34; href=&#34;https://rufus.ie/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;rufus.ie&lt;/a&gt;官网下载启动盘制作工具Rufus并打开，引导类型选择刚刚下载的镜像，分区类型选择GPT，目标系统类型选择UEFI，2012年后的主机基本都是GPT+UEFI了，如果是上古时代的宝贝需要选择其他类型，其他默认即可，点击&lt;code&gt;开始&lt;/code&gt;等待&lt;code&gt;准备就绪&lt;/code&gt;进度条全绿后即可关闭退出。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;注意：请备份U盘数据，该操作会格式化整个U盘！！！&lt;/strong&gt;&lt;/p&gt;
@@ -66,9 +66,9 @@
 		data-flex-basis=&#34;162px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;二-操作系统安装与远程访问&#34;&gt;二、 操作系统安装与远程访问
-&lt;/h2&gt;&lt;h3 id=&#34;21-ubuntu-server安装&#34;&gt;2.1 Ubuntu-Server安装
-&lt;/h3&gt;&lt;p&gt;第一步：&lt;/p&gt;
+&lt;h3 id=&#34;二-操作系统安装与远程访问&#34;&gt;二、 操作系统安装与远程访问
+&lt;/h3&gt;&lt;h4 id=&#34;21-ubuntu-server安装&#34;&gt;2.1 Ubuntu-Server安装
+&lt;/h4&gt;&lt;p&gt;第一步：&lt;/p&gt;
 &lt;p&gt;将准备好的启动盘插在迷你主机上，进入BIOS模式选择对应的启动盘启动，我这主机是按&lt;code&gt;F7&lt;/code&gt;进入BIOS，一般开机界面会打印进入BIOS的按键的。&lt;/p&gt;
 &lt;p&gt;第二步：&lt;/p&gt;
 &lt;p&gt;安装配置，这里有个非常详细的教程，按这个来就可以了&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/698434939&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -87,8 +87,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;free -h &lt;span class=&#34;c1&#34;&gt;#查看内存状态，有4GB的交换空间，如果内存溢出会从硬盘搞4GB的空间来临时使用，避免直接崩溃&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;22-内网wifi连接&#34;&gt;2.2 内网WIFI连接
-&lt;/h3&gt;&lt;p&gt;之前安装的时候连的手机热点，现在需要进入内网环境，需要修改一下配置&lt;/p&gt;
+&lt;/div&gt;&lt;h4 id=&#34;22-内网wifi连接&#34;&gt;2.2 内网WIFI连接
+&lt;/h4&gt;&lt;p&gt;之前安装的时候连的手机热点，现在需要进入内网环境，需要修改一下配置&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -139,8 +139,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl disable ssh	&lt;span class=&#34;c1&#34;&gt;#禁用开机自启	&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;23-ssh远程访问&#34;&gt;2.3 SSH远程访问
-&lt;/h3&gt;&lt;p&gt;如果在电脑上也能ping通服务器的IP，那就可以拔掉服务器的显示屏和键盘了，我显示屏支持分屏显示还好，主机用DP接口，迷你主机用HDMI接口可以一起使用，但键盘只有一个只能反复切换很麻烦，所以还是远程登陆比较方便。&lt;/p&gt;
+&lt;/div&gt;&lt;h4 id=&#34;23-ssh远程访问&#34;&gt;2.3 SSH远程访问
+&lt;/h4&gt;&lt;p&gt;如果在电脑上也能ping通服务器的IP，那就可以拔掉服务器的显示屏和键盘了，我显示屏支持分屏显示还好，主机用DP接口，迷你主机用HDMI接口可以一起使用，但键盘只有一个只能反复切换很麻烦，所以还是远程登陆比较方便。&lt;/p&gt;
 &lt;p&gt;回到Windows的主机，打开CMD，开始远程访问：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -152,10 +152,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh 你的服务器用户名@服务器的IP地址 #会提示输入账号和密码，看到和之前在服务器上一样的前缀提示符就说明成功了
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;三-局域网服务器搭建&#34;&gt;三、 局域网服务器搭建
-&lt;/h2&gt;&lt;p&gt;服务器首先当然要解决公网问题，现在我的路由器没给IPV4的公网IP，需要借助其他手段比如内网穿透，代理之类的，但最靠谱的还是直接向运营商要一个公网IP，这里因为我还有两个月就搬家的原因，决定先试试局域网，后面搬家后再找运营商要一个公网IP。&lt;/p&gt;
-&lt;h3 id=&#34;31-更新软件源和安装依赖&#34;&gt;3.1 更新软件源和安装依赖
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;&lt;h3 id=&#34;三-局域网服务器搭建&#34;&gt;三、 局域网服务器搭建
+&lt;/h3&gt;&lt;p&gt;服务器首先当然要解决公网问题，现在我的路由器没给IPV4的公网IP，需要借助其他手段比如内网穿透，代理之类的，但最靠谱的还是直接向运营商要一个公网IP，这里因为我还有两个月就搬家的原因，决定先试试局域网，后面搬家后再找运营商要一个公网IP。&lt;/p&gt;
+&lt;h4 id=&#34;31-更新软件源和安装依赖&#34;&gt;3.1 更新软件源和安装依赖
+&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
@@ -327,8 +327,8 @@
 		data-flex-basis=&#34;942px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;32-饥荒服务器环境安装&#34;&gt;3.2 饥荒服务器环境安装
-&lt;/h3&gt;&lt;p&gt;第一步：steamcmd安装&lt;/p&gt;
+&lt;h4 id=&#34;32-饥荒服务器环境安装&#34;&gt;3.2 饥荒服务器环境安装
+&lt;/h4&gt;&lt;p&gt;第一步：steamcmd安装&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -416,8 +416,8 @@
 		data-flex-basis=&#34;1177px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;33-服务器配置&#34;&gt;3.3 服务器配置
-&lt;/h3&gt;&lt;p&gt;运行服务器，需要游戏官方的token，进行授权，访问科雷官网：&lt;a class=&#34;link&#34; href=&#34;https://accounts.klei.com/login&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h4 id=&#34;33-服务器配置&#34;&gt;3.3 服务器配置
+&lt;/h4&gt;&lt;p&gt;运行服务器，需要游戏官方的token，进行授权，访问科雷官网：&lt;a class=&#34;link&#34; href=&#34;https://accounts.klei.com/login&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Klei&lt;/a&gt;，使用steam账户登陆，选择&lt;code&gt;游戏&lt;/code&gt;&amp;raquo;&lt;code&gt;《饥荒：联机版》的游戏服务器&lt;/code&gt;，输入服务器名称后点击&lt;code&gt;添加新服务器&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;./p/%E9%A5%A5%E8%8D%92%E8%81%94%E6%9C%BA%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/image-20260125234105919.png&#34;
 	width=&#34;1677&#34;
@@ -649,9 +649,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;四公网服务器搭建&#34;&gt;四、公网服务器搭建
-&lt;/h2&gt;&lt;h3 id=&#34;41-配置修改&#34;&gt;4.1 配置修改
-&lt;/h3&gt;&lt;p&gt;最理想的情况当然是拥有公网的IPV4地址，但不好搞，好多地方都要收费，然后就是内网穿透之类的，但也需要一定的费用租借公网服务器，还有就是IPV6，因为几乎用不完的数量，公网IPV6运营商一般还是会提供的，我最先就尝试了该方法，竟然一次性成功了。。。而且简单得离谱。。。（看后面是我天真了）&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;四公网服务器搭建&#34;&gt;四、公网服务器搭建
+&lt;/h3&gt;&lt;h4 id=&#34;41-配置修改&#34;&gt;4.1 配置修改
+&lt;/h4&gt;&lt;p&gt;最理想的情况当然是拥有公网的IPV4地址，但不好搞，好多地方都要收费，然后就是内网穿透之类的，但也需要一定的费用租借公网服务器，还有就是IPV6，因为几乎用不完的数量，公网IPV6运营商一般还是会提供的，我最先就尝试了该方法，竟然一次性成功了。。。而且简单得离谱。。。（看后面是我天真了）&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -682,8 +682,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rm -rf ~/dst-server/dontstarve-config/clusters
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;42-洞穴与地面通信问题&#34;&gt;4.2 洞穴与地面通信问题
-&lt;/h3&gt;&lt;p&gt;好吧，没这么简单，洞穴连接不上地面了，查看了下监听状态，地面都没在监听与洞穴通信的端口&lt;/p&gt;
+&lt;/div&gt;&lt;h4 id=&#34;42-洞穴与地面通信问题&#34;&gt;4.2 洞穴与地面通信问题
+&lt;/h4&gt;&lt;p&gt;好吧，没这么简单，洞穴连接不上地面了，查看了下监听状态，地面都没在监听与洞穴通信的端口&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -731,9 +731,9 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;这里需要注意一下IPV6的动态地址变化，最坑的是地址变了我还能连上SSH（后面发觉其实是连到wifi的IPV6的地址了）只是会非常卡并退出，让我一直以为地址没变，如果要解决动态地址的问题需要DDNS动态域名解析来处理，这里先跳过，主攻地面和洞穴通信问题。&lt;/p&gt;
 &lt;p&gt;好吧，经过反复尝试，饥荒好像地面与洞穴之间的通信只支持IPV4，不过这也说得通了，怪不得网上没有一个IPV6的教程，全是内网穿透什么的，但确实也没人说为什么不能用IPV6，至少我没搜到，终究是亲自来踩坑了，或许可以去科雷官方论坛看看。&lt;/p&gt;
-&lt;h1 id=&#34;指令存档&#34;&gt;指令存档
-&lt;/h1&gt;&lt;h2 id=&#34;基础命令&#34;&gt;基础命令
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;h2 id=&#34;指令存档&#34;&gt;指令存档
+&lt;/h2&gt;&lt;h3 id=&#34;基础命令&#34;&gt;基础命令
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
@@ -781,8 +781,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod +x 文件 &lt;span class=&#34;c1&#34;&gt;#添加执行权限&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;cpu温度读取&#34;&gt;CPU温度读取
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;&lt;h3 id=&#34;cpu温度读取&#34;&gt;CPU温度读取
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
@@ -808,8 +808,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;用户信息操作&#34;&gt;用户信息操作
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;&lt;h3 id=&#34;用户信息操作&#34;&gt;用户信息操作
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
@@ -869,8 +869,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wc -l /etc/passwd
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;apt操作&#34;&gt;APT操作
-&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;/div&gt;&lt;h3 id=&#34;apt操作&#34;&gt;APT操作
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
